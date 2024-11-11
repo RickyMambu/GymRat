@@ -74,7 +74,7 @@
     color: #ffffff;
   }
   
-/* Home Section Styling */
+/* Home  */
 .home-section {
     display: flex;
     flex-direction: column;
@@ -90,9 +90,9 @@
   }
   
   .home-title {
-    font-size: 4rem; /* Increase font size for a larger title */
+    font-size: 4rem; 
     color: #f0db4f;
-    text-align: center; /* Centers title at the top */
+    text-align: center;
     margin-bottom: 30px;
   }
   
@@ -100,5 +100,22 @@
     font-size: 1.2rem;
     line-height: 1.6;
     color: #b0b0b0;
+  }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+ }
+
+  .home-content img {
+    width: 100%; 
+    max-width: 400px; 
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
   }
   
