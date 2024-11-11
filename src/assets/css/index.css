@@ -56,7 +56,6 @@
     background-color: #e1c145;
   }
   
-  /* Main content styling */
   .content {
     padding: 40px;
   }
@@ -68,5 +67,38 @@
   section h2 {
     color: #f0db4f;
     margin-bottom: 10px;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+/* Home Section Styling */
+.home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    min-height: 80vh;
+  }
+  
+  .home-content {
+    max-width: 900px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .home-title {
+    font-size: 4rem; /* Increase font size for a larger title */
+    color: #f0db4f;
+    text-align: center; /* Centers title at the top */
+    margin-bottom: 30px;
+  }
+  
+  .home-paragraph {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #b0b0b0;
   }
   
