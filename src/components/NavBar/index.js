@@ -10,7 +10,6 @@ const Navbar = () => {
         <li><a href="#progress">Progress</a></li>
         <li><a href="#information">Information</a></li>
       </ul>
-      <button className="login-btn">Log In</button>
     </nav>
   );
 };
