@@ -13,21 +13,32 @@
   
   .navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-color: #1f1f1f;
+    align-items: center;
     padding: 20px;
+    background-color: #121212;
   }
   
   .navbar-logo {
-    font-size: 24px;
     color: #f0db4f;
+    font-size: 2rem;
+    margin-left: 100px;
   }
   
   .navbar-links {
-    list-style: none;
     display: flex;
-    gap: 20px;
+    list-style-type: none;
+    margin-right: 100px;
+  }
+  
+  .navbar-links li {
+    margin-left: 20px;
+  }
+  
+  .icon {
+    margin-right: 8px;
+    font-size: 1.2rem;
+    color: #f0db4f; /* Color for the icons */
   }
   
   .navbar-links a {
@@ -39,21 +50,6 @@
   
   .navbar-links a:hover {
     color: #f0db4f;
-  }
-  
-  .login-btn {
-    background-color: #f0db4f;
-    color: #121212;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .login-btn:hover {
-    background-color: #e1c145;
   }
   
   .content {
@@ -75,32 +71,46 @@
   }
   
 /* Home  */
-/* Home Section Styling */
 .home-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 50px;
   min-height: 80vh;
-  background-color: #121212;
+  background: linear-gradient(135deg, #1e1e2f 0%, #121212 100%);
+  position: relative;
+  overflow: hidden;
 }
 
+.home-section::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent 60%);
+  transform: rotate(45deg);
+  pointer-events: none;
+}
 .home-content {
   max-width: 600px;
   text-align: center;
 }
 
 .home-title {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #f0db4f;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  text-shadow: 0px 5px 20px rgba(240, 219, 79, 1000);
 }
 
 .home-paragraph {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6;
   color: #b0b0b0;
   margin-bottom: 40px;
+  font-weight: 600;
 }
 
 .image-container {
