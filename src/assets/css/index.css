@@ -319,3 +319,133 @@ body {
   background-color: #f0db4f;
   margin: 10px auto 0;
 }
+
+/* Main Section Styling */
+.exercise-section {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* Section Heading */
+.section-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 20px;
+  text-transform: uppercase;
+  border-left: 5px solid #f0db4f;
+  padding-left: 10px;
+}
+
+.section-subtext {
+  color: #b0b0b0;
+  font-size: 1rem;
+  margin: 10px 0 20px;
+}
+
+.schedule-button {
+  background-color: #f0db4f;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.schedule-button:hover {
+  background-color: #ff4b5c;
+}
+
+/* Exercise Content Layout */
+.exercise-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.main-exercise-image {
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.main-exercise-image:hover {
+  transform: scale(1.05);
+}
+
+.exercise-description {
+  width: 40%;
+}
+
+.exercise-description h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f0db4f;
+}
+
+.exercise-description p {
+  color: #9f9f9f;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.view-schedule-link {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: color 0.3s;
+}
+
+.view-schedule-link:hover {
+  color: #f0db4f;
+}
+
+/* Exercise List */
+.exercise-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.exercise-item {
+  width: calc(100% / 6 - 10px);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.exercise-item:hover {
+  transform: scale(1.05);
+}
+
+.exercise-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.exercise-item img:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.exercise-item p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #c9cb62;
+  margin-top: 8px;
+  text-transform: capitalize;
+}
