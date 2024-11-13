@@ -165,79 +165,31 @@ body {
 }
 
 .diet-section {
-  padding: 60px;
-  background-color: #121212;
-  color: #ffffff;
-  text-align: center;
-}
-
-.diet-heading {
-  font-size: 2rem;
-  color: #ffffff;
-  margin-bottom: 40px;
-  position: relative;
-}
-
-.diet-heading::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 4px;
-  background-color: #f0db4f;
-  margin: 10px auto 0;
-}
-
-.diet-features {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.diet-feature {
-  flex: 1;
-  min-width: 200px;
-  max-width: 250px;
-  background-color: #1e1e2f;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-}
-
-.diet-feature:hover {
-  transform: scale(1.05);
-}
-
-.diet-icon {
-  font-size: 2rem;
-  color: #f0db4f;
-  margin-bottom: 15px;
-}
-
-.diet-feature h3 {
-  font-size: 1.2rem;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-
-.diet-feature p {
-  color: #b0b0b0;
-  font-size: 0.9rem;
-}
-
-.diet-section {
   padding: 40px;
-  background-color: #121212;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #121212, #1a1a1a);
   color: #ffffff;
   text-align: center;
+  border-radius: 12px;
 }
 
 .diet-heading {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #f0db4f;
   margin-bottom: 20px;
+  margin-top: 20px;
+  animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .diet-features,
@@ -251,24 +203,94 @@ body {
 
 .diet-feature,
 .food-category {
-  background-color: #1e1e2f;
+  background: linear-gradient(135deg, #1e1e2f, #252545);
   padding: 20px;
-  border-radius: 8px;
-  width: 200px;
+  border-radius: 10px;
+  width: 220px;
   text-align: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
 }
 
 .diet-feature:hover,
 .food-category:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+  transform: scale(1.08) rotate(1deg);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 .diet-icon,
 .food-icon {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #f0db4f;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+}
+
+.diet-feature:hover .diet-icon,
+.food-category:hover .food-icon {
+  color: #f0db4f;
+}
+
+.food-category:hover .food-list {
+  display: block;
+  opacity: 1;
+  z-index: 2;
+}
+
+.food-category .food-list li {
+  margin: 5px 0;
+}
+
+.food-item p {
+  margin: 0;
+}
+
+.food-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.diet-feature h3,
+.food-category h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #c2b66b;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.diet-feature p,
+.food-category p {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+.diet-icon,
+.food-icon {
+  font-size: 2.5rem;
+  color: #ff4b5c;
+  margin-bottom: 12px;
+}
+
+.diet-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.diet-heading::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #f0db4f;
+  margin: 10px auto 0;
 }
