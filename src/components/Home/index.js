@@ -1,8 +1,8 @@
 import React from "react";
 import { MouseTrail } from "@stichiboi/react-elegant-mouse-trail";
-import GymPhoto from '../../assets/img/strong-man-training-gym.jpg';
-import GymPhoto2 from '../../assets/img/people-doing-indoor-cycling.jpg';
-import GymPhoto3 from '../../assets/img/close-up-kettlebells-workout-gym.jpg';
+import GymPhoto from "../../assets/img/strong-man-training-gym.jpg";
+import GymPhoto2 from "../../assets/img/people-doing-indoor-cycling.jpg";
+import GymPhoto3 from "../../assets/img/close-up-kettlebells-workout-gym.jpg";
 
 const Home = () => {
   return (
