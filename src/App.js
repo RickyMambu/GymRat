@@ -7,7 +7,7 @@ import Exercise from "./components/Exercise";
 
 const App = () => {
   return (
-    <div>
+    <div className="full">
       <Navbar />
       <Home />
       <Diet />

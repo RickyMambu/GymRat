@@ -5,7 +5,7 @@ import GymPhoto2 from "../../assets/img/people-doing-indoor-cycling.jpg";
 import GymPhoto3 from "../../assets/img/close-up-kettlebells-workout-gym.jpg";
 
 const Home = () => {
-  return (
+  return ( 
     <div>
       <MouseTrail strokeColor="rgb(240, 219, 79)" lineWidthStart={10} />
       <section className="home-section">
