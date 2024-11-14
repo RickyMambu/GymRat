@@ -23,12 +23,12 @@ const Navbar = () => {
         </li>
         <li>
           <a href="#progress">
-            <FaChartLine className="icon" /> Progress
+            <FaChartLine className="icon" /> About
           </a>
         </li>
         <li>
           <a href="#information">
-            <FaInfoCircle className="icon" /> Information
+            <FaInfoCircle className="icon" /> Copntact
           </a>
         </li>
       </ul>
