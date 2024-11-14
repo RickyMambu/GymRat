@@ -9,6 +9,25 @@ const About = () => {
             <h1>
               <span>About</span>Us
             </h1>
+            <p>
+              Welcome to GymRat, your ultimate fitness companion. We're here to
+              inspire, guide, and support you on your journey to health and
+              wellness. We believe that fitness is more than just a routine—it's
+              a lifestyle and a path toward a stronger, healthier, and more
+              empowered you.
+              <br />
+              Join us and be part of a community that values resilience,
+              discipline, and continuous improvement. Remember, every step
+              counts, and together, we'll reach new heights of healtht
+              lifestyle!
+            </p>
+          </div>
+          <div className="image">
+            <img
+              src="./images/about.jpg"
+              alt="about-pic"
+              className="about-pic"
+            />
           </div>
         </div>
         <div className="team">
