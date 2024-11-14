@@ -28,7 +28,6 @@ body {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-
 .navbar-logo {
   color: #f0db4f;
   font-size: 2rem;
@@ -90,7 +89,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 
 .home-content {
   max-width: 500px;
@@ -170,7 +168,6 @@ body {
   border-radius: 12px;
 }
 
-
 .diet-heading {
   font-size: 2.5rem;
   color: #f0db4f;
@@ -200,7 +197,6 @@ body {
 }
 
 .diet-feature,
-
 .food-category {
   background: linear-gradient(135deg, #1e1e2f 0%, #121212 100%);
   padding: 20px;
@@ -313,7 +309,7 @@ body {
   text-transform: uppercase;
   border-left: 5px solid #f0db4f;
   padding-left: 10px;
-  text-align: left  ;
+  text-align: left;
 }
 
 .section-subtext {
@@ -560,4 +556,92 @@ body {
   width: 70%;
   text-align: center;
   margin: 0 auto 10px auto;
+}
+
+/* Contact */
+.contact {
+  margin-top: 1400px; /* Sesuaikan jarak sesuai kebutuhan */
+  padding: 80px 0; /* Tambahkan jarak dengan navbar */
+  color: #ffffff;
+}
+
+.contact .sec-top h1 {
+  font-size: 2.8rem;
+  color: #f0db4f;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact .sec-top h1 span {
+  color: #ffffff;
+}
+
+/* Contact Boxes */
+.contact-boxes {
+  display: flex;
+  flex-wrap: wrap; /* Membuatnya responsif */
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.contact-box {
+  background: #1e1e2f;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  flex: 1;
+  max-width: 300px; /* Batas lebar agar lebih rapi */
+  border-radius: 10px;
+}
+
+.contact-box i {
+  font-size: 2.5rem;
+  color: #f0db4f;
+  margin-bottom: 15px;
+}
+
+.contact-box h3 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.contact-box p {
+  color: #b0b0b0;
+  font-size: 1.1rem;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: #1e1e2f;
+  border: 1px solid #333;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.contact-form .btn {
+  padding: 15px;
+  background-color: #f0db4f;
+  color: #121212;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form .btn:hover {
+  background-color: #ff4b5c;
+  transition: background-color 0.3s ease;
 }
