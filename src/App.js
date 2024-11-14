@@ -4,6 +4,7 @@ import Navbar from "./components/NavBar";
 import Home from "./components/Home";
 import Diet from "./components/Diet";
 import Exercise from "./components/Exercise";
+import About from "./components/About";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Home />
       <Diet />
       <Exercise />
+      <About />
       <section></section>
     </div>
   );
