@@ -37,7 +37,7 @@ const About = () => {
           <div className="team_box">
             <div className="profile">
               <img
-                src="./images/profile.jpg"
+                src="./images/ando.jpg"
                 alt="ando-pic"
                 className="about-pic"
               />
@@ -47,7 +47,7 @@ const About = () => {
             </div>
             <div className="profile">
               <img
-                src="./images/profile.jpg"
+                src="./images/ricky.jpg"
                 alt="ricky-pic"
                 className="about-pic"
               />
@@ -57,7 +57,7 @@ const About = () => {
             </div>
             <div className="profile">
               <img
-                src="./images/profile.jpg"
+                src="./images/jeremy.png"
                 alt="jeremy-pic"
                 className="about-pic"
               />
@@ -67,7 +67,7 @@ const About = () => {
             </div>
             <div className="profile">
               <img
-                src="./images/profile.jpg"
+                src="./images/mili.jpg"
                 alt="emily-pic"
                 className="about-pic"
               />
@@ -77,7 +77,7 @@ const About = () => {
             </div>
             <div className="profile">
               <img
-                src="./images/profile.jpg"
+                src="./images/lika.jpg"
                 alt="lika-pic"
                 className="about-pic"
               />

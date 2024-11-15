@@ -552,11 +552,37 @@ body {
   transition: 0.4s;
 }
 
+.team .team_box .profile:hover {
+  border-radius: 20px;
+  height: 320px;
+}
+
+.team .team_box .profile img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  transition: 0.4s;
+}
+
+.team .team_box .profile:hover img {
+  border-radius: 20px;
+  margin-top: -230px;
+}
+
 .team .team_box .profile .info {
   position: absolute;
   text-align: center;
   top: 25%;
   transition: 0.4s;
+}
+
+.team .team_box .profile:hover .info {
+  top: 60%;
 }
 
 .team .team_box .profile .info .name {
