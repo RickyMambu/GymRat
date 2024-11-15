@@ -8,7 +8,6 @@ html {
   -ms-overflow-style: none;
 }
 
-
 body {
   font-family: Arial, sans-serif;
   background-color: #121212;
@@ -21,7 +20,6 @@ body {
   height: 100%;
   overflow: auto;
   scroll-behavior: smooth;
-
 }
 /* Navbar */
 .navbar {
@@ -167,6 +165,10 @@ body {
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
 }
 
+.homeLow {
+  text-align: center;
+  margin-top: 70px;
+}
 /* Diet */
 
 .diet-section {
@@ -655,5 +657,3 @@ body {
   background-color: #ff4b5c;
   transition: background-color 0.3s ease;
 }
-
-

@@ -6,19 +6,31 @@ import Diet from "./components/Diet";
 import Exercise from "./components/Exercise";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Mock from "./Mock";
 
 const App = () => {
   return (
     <div className="full">
-      <Navbar/>
-      <Home id="Home"/>
-      <Diet id="Diet"/>
-      <Exercise id="Exercise"/>
-      <About id="About"/>
-      <Contact id="Contact"/>
-
-      <section></section>
+      <Router>
+        <Routes>
+          <Route path="/src/components/Home" element={<Mock/>}>
+            <Navbar />
+            <Home />
+            <Diet />
+            <Exercise />
+            <About />
+            <Contact />
+          </Route>
+        </Routes>
+      </Router>
     </div>
+    //   <Router>
+    //   <Routes>
+    //     <Route path="/" element={<Mock />} />
+    //     <Route path="/home" element={<Home />} />
+    //   </Routes>
+    // </Router>
   );
 };
 
