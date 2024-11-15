@@ -15,7 +15,7 @@ import {
 
 const Diet = () => {
   return (
-    <section className="diet-section">
+    <section className="diet-section" id="Diet">
       <h2 className="diet-heading">WHY CHOOSE OUR DIET PLAN</h2>
       <div className="diet-features">
         <div className="diet-feature">

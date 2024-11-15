@@ -8,7 +8,7 @@ const Home = () => {
   return ( 
     <div>
       <MouseTrail strokeColor="rgb(240, 219, 79)" lineWidthStart={10} />
-      <section className="home-section">
+      <section className="home-section" id="Home">
         <div className="home-content">
           <h1 className="home-title">Welcome to GymRat</h1>
           <p className="home-paragraph">
