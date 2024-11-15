@@ -12,16 +12,20 @@ const Contact = () => (
         <div className="contact-box">
           <i className="fa-solid fa-phone" />
           <h3>Phone</h3>
-          <p>0813-4105-0067 Ricky</p>
-          <p>0896-9803-5966 Revando</p>
-          <p>0859-3184-4355 Jeremy</p>
-          <p>0852-1638-6828 Noselycha</p>
-          <p>0821-9349-2409 Emily</p>
+          <p className="phone">0813-4105-0067 Ricky</p>
+          <p className="phone">0896-9803-5966 Revando</p>
+          <p className="phone">0859-3184-4355 Jeremy</p>
+          <p className="phone">0852-1638-6828 Noselycha</p>
+          <p className="phone">0821-9349-2409 Emily</p>
         </div>
         <div className="contact-box">
           <i className="fa-solid fa-envelope" />
           <h3>Email</h3>
-          <p>info@example.com</p>
+          <p>s22210153@student.unklab.ac.id</p>
+          <p>s22210120@student.unklab.ac.id</p>
+          <p>s22210214@student.unklab.ac.id</p>
+          <p>s22210290@student.unklab.ac.id</p>
+          <p>s22210189@student.unklab.ac.id</p>
         </div>
         <div className="contact-box">
           <i className="fa-solid fa-map-marker-alt" />

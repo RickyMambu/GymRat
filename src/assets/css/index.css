@@ -638,6 +638,37 @@ body {
   max-height: 30px;
 }
 
+.contact-box {
+  background: #1e1e2f;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  flex: 1;
+  max-width: 500px;
+  min-width: 300px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.contact-box p {
+  margin: 18px 0;
+  font-size: 1.1rem;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.contact-box p:hover {
+  color: #f0db4f;
+  cursor: pointer;
+}
+
+.contact-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
 /* Contact Form */
 .contact-form {
   max-width: 600px;
