@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const About = () => {
   return (
-    <section id="experience">
+    <section id="About">
       <div className="about">
         <div className="about_main">
           <div className="about_text">

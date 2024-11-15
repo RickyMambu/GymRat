@@ -24,7 +24,7 @@ const Exercise = () => {
   };
 
   return (
-    <div className="exercise-section">
+    <div className="exercise-section" id="Exercise">
       <h2 className="section-heading">Exercise</h2>
       <p className="section-subtext">
         Our fitness experts can help you discover new training techniques and

@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+}
+
 
 body {
   font-family: Arial, sans-serif;
@@ -13,6 +18,10 @@ body {
   background: linear-gradient(135deg, #1e1e2f 0%, #121212 100%);
   min-height: 100vh;
   color: #ffffff;
+  height: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
+
 }
 /* Navbar */
 .navbar {
@@ -59,6 +68,7 @@ body {
 
 .navbar-links a:hover {
   color: #f0db4f;
+  cursor: pointer;
 }
 
 .content {
@@ -645,3 +655,5 @@ body {
   background-color: #ff4b5c;
   transition: background-color 0.3s ease;
 }
+
+

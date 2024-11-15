@@ -10,12 +10,12 @@ import Contact from "./components/Contact";
 const App = () => {
   return (
     <div className="full">
-      <Navbar />
-      <Home />
-      <Diet />
-      <Exercise />
-      <About />
-      <Contact />
+      <Navbar/>
+      <Home id="Home"/>
+      <Diet id="Diet"/>
+      <Exercise id="Exercise"/>
+      <About id="About"/>
+      <Contact id="Contact"/>
 
       <section></section>
     </div>
