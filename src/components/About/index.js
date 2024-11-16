@@ -37,12 +37,12 @@ const About = () => {
           <div className="team_box">
             <div className="profile">
               <img
-                src="./images/ando.jpg"
-                alt="ando-pic"
+                src="./images/jeremy.png"
+                alt="jeremy-pic"
                 className="about-pic"
               />
               <div className="info">
-                <h2 className="name">Revando Aruperes</h2>
+                <h2 className="name">Purukan Jeremy</h2>
               </div>
             </div>
             <div className="profile">
@@ -57,12 +57,12 @@ const About = () => {
             </div>
             <div className="profile">
               <img
-                src="./images/jeremy.png"
-                alt="jeremy-pic"
+                src="./images/ando.jpg"
+                alt="ando-pic"
                 className="about-pic"
               />
               <div className="info">
-                <h2 className="name">Jeremy Purukan</h2>
+                <h2 className="name">Revando Aruperes</h2>
               </div>
             </div>
             <div className="profile">

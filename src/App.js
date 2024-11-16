@@ -12,25 +12,13 @@ import Mock from "./Mock";
 const App = () => {
   return (
     <div className="full">
-      <Router>
-        <Routes>
-          <Route path="/src/components/Home" element={<Mock/>}>
-            <Navbar />
-            <Home />
-            <Diet />
-            <Exercise />
-            <About />
-            <Contact />
-          </Route>
-        </Routes>
-      </Router>
+      <Navbar />
+      <Home />
+      <Diet />
+      <Exercise />
+      <About />
+      <Contact />
     </div>
-    //   <Router>
-    //   <Routes>
-    //     <Route path="/" element={<Mock />} />
-    //     <Route path="/home" element={<Home />} />
-    //   </Routes>
-    // </Router>
   );
 };
 
