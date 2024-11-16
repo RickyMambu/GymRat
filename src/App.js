@@ -14,7 +14,7 @@ const App = () => {
     <div className="full">
       <Router>
         <Routes>
-          <Route path="/src/components/Home" element={<Mock/>}>
+          <Route path="/src/components/Home" element={<Mock />}>
             <Navbar />
             <Home />
             <Diet />
