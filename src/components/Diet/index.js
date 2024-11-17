@@ -42,7 +42,10 @@ const Diet = () => {
 
       <h2 className="diet-heading">Nutritional Food Categories</h2>
       <div className="food-categories">
-        <div className="food-category">
+        <a
+          href="https://www.alodokter.com/ini-makanan-sumber-protein-hewani-yang-harus-anda-ketahui"
+          className="food-category"
+        >
           <FaFish className="food-icon" />
           <h3>Animal Protein</h3>
           <p>Protein from animal sources like fish, meat, and eggs.</p>
@@ -64,9 +67,12 @@ const Diet = () => {
               <p>Cheese</p>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div className="food-category">
+        <a
+          href="https://hellosehat.com/nutrisi/fakta-gizi/11-sumber-protein-nabati-terbaik/"
+          className="food-category"
+        >
           <FaSeedling className="food-icon" />
           <h3>Plant Protein</h3>
           <p>Protein from plant sources like legumes and seeds.</p>
@@ -88,9 +94,12 @@ const Diet = () => {
               <p>Lentils</p>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div className="food-category">
+        <a
+          href="https://hellosehat.com/nutrisi/fakta-gizi/tips-memenuhi-mineral-dan-vitamin/"
+          className="food-category"
+        >
           <FaCheese className="food-icon" />
           <h3>Vitamins & Minerals</h3>
           <p>Essential vitamins and minerals for a healthy body.</p>
@@ -108,7 +117,7 @@ const Diet = () => {
               <p>Spinach</p>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </section>
   );
