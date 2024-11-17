@@ -724,3 +724,51 @@ body {
   padding: 0 20px;
   position: relative;
 }
+/* Footer Styling */
+.footer {
+  background: #121212; /* Warna gelap */
+  padding: 20px 0;
+  color: #ffffff; /* Teks warna putih */
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #b0b0b0; /* Warna abu-abu untuk teks default */
+}
+
+.footer p span.gymrat {
+  color: #f0db4f; /* Warna kuning hanya untuk GymRat */
+  font-weight: bold; /* Opsional, membuat teks lebih tebal */
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center; /* Pusatkan tautan */
+  gap: 20px; /* Jarak antar tautan */
+}
+
+.footer-links li {
+  display: inline;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #f0db4f; /* Warna kuning untuk tautan */
+  font-size: 1rem;
+  transition: color 0.3s ease; /* Transisi saat hover */
+}
+
+.footer-links a:hover {
+  color: #ff4b5c; /* Warna merah muda saat hover */
+}

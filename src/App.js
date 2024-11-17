@@ -6,6 +6,7 @@ import Diet from "./components/Diet";
 import Exercise from "./components/Exercise";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Exercise />
       <About />
       <Contact />
+      <Footer />
 
       <section></section>
     </div>
