@@ -11,7 +11,7 @@ const firebaseConfig = {
   projectId: "gymrat-29262",
   storageBucket: "gymrat-29262.firebasestorage.app",
   messagingSenderId: "213477217192",
-  appId: "1:213477217192:web:36478fad498a62c565439d"
+  appId: "1:213477217192:web:36478fad498a62c565439d",
 };
 
 // Initialize Firebase
