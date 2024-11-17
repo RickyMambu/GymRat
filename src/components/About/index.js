@@ -20,6 +20,7 @@ const Slider = () => {
   }, []);
 
   return (
+
     <div className="container">
       <section id="experience">
         {/* About Us */}
@@ -30,6 +31,7 @@ const Slider = () => {
                 <span>About</span>Us
               </h1>
             </div>
+
           </div>
         </div>
       </section>
@@ -59,6 +61,7 @@ const Slider = () => {
             </div>
           </div>
         </div>
+
         <div className="slider-nav">
           <a href="#"></a>
           <a href="#"></a>
@@ -76,6 +79,7 @@ const Slider = () => {
             <img src="./images/ando.jpg" alt="ando-pic" className="about-pic" />
             <div className="info">
               <h2 className="name">Revando Aruperes</h2>
+
             </div>
           </div>
           <div className="profile">
@@ -87,6 +91,7 @@ const Slider = () => {
             <div className="info">
               <h2 className="name">Ricky Mambu</h2>
             </div>
+
           </div>
           <div className="profile">
             <img
@@ -96,6 +101,7 @@ const Slider = () => {
             />
             <div className="info">
               <h2 className="name">Jeremy Purukan</h2>
+
             </div>
           </div>
           <div className="profile">
