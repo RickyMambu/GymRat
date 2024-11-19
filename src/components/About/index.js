@@ -1,9 +1,19 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
+import { getDatabase, ref, onValue } from "firebase/database";
 
 const Slider = () => {
   const sliderRef = useRef(null);
+  const [About, setAbout] = useState({});
 
   useEffect(() => {
+    const db = getDatabase();
+    const aboutRef = ref(db, "About");
+
+    onValue(aboutRef, (snapshot) => {
+      const data = snapshot.val();
+      setAbout(data);
+    });
+
     const slider = sliderRef.current;
 
     const slideInterval = setInterval(() => {
@@ -20,44 +30,35 @@ const Slider = () => {
   }, []);
 
   return (
-    <section className="about-section">
 
-      <div className="container">
-          {/* About Us */}
-          <div className="about">
-            <div className="about_main">
-              <div className="about_text">
-                <h1>
-                  <span>About</span>Us
-                </h1>
-              </div>
+    <div className="container">
+      <section id="experience">
+        {/* About Us */}
+        <div className="about">
+          <div className="about_main">
+            <div className="about_text">
+              <h1>
+                <span>{About.title}</span>
+                {About.subtitle}
+              </h1>
             </div>
           </div>
 
-        {/* Slider Section */}
-        <div className="slider-wrapper">
-          <div ref={sliderRef} className="slider">
-            <div className="slide">
-              <img src="./images/about1.jpg" alt="Image 1" />
-              <div className="slide-text">
-                GymRat is your trusted companion in achieving fitness and health
-                goals through expert guidance and tools
-              </div>
-            </div>
-            <div className="slide">
-              <img src="./images/about2.jpg" alt="Image 2" />
-              <div className="slide-text">
-                We are dedicated to providing top-tier fitness programs tailored
-                to every individual’s journey
-              </div>
-            </div>
-            <div className="slide">
-              <img src="./images/about3.jpg" alt="Image 3" />
-              <div className="slide-text">
-                Our diet plans are crafted to complement your fitness regime,
-                ensuring optimal health and performance
-              </div>
-            </div>
+
+      {/* Slider Section */}
+      <div className="slider-wrapper">
+        <div ref={sliderRef} className="slider">
+          <div className="slide">
+            <img src="./images/about1.jpg" alt="Image 1" />
+            <div className="slide-text">{About.text1}</div>
+          </div>
+          <div className="slide">
+            <img src="./images/about2.jpg" alt="Image 2" />
+            <div className="slide-text">{About.text2}</div>
+          </div>
+          <div className="slide">
+            <img src="./images/about3.jpg" alt="Image 3" />
+            <div className="slide-text">{About.text3}</div>
           </div>
 
           <div className="slider-nav">
@@ -66,6 +67,7 @@ const Slider = () => {
             <a href="#"></a>
           </div>
         </div>
+
 
         {/* Team Section */}
         <div className="team">
@@ -100,7 +102,6 @@ const Slider = () => {
                 <h2 className="name">Jeremy <br/>Purukan</h2>
 
               </div>
-            </div>
             <div className="profile">
               <img
                 src="./images/mili.jpg"

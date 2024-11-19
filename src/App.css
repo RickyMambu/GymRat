@@ -90,7 +90,10 @@ body {
 
 .signup-form label {
   font-size: 0.9rem;
-  margin-left: -180px;
+  margin-left: -250px;
+  color: #f0db4f;
+  font-weight: bold;
+
 }
 
 .signup-form input {
@@ -101,6 +104,69 @@ body {
 }
 
 .signup-button {
+  background: linear-gradient(to right, #f7de6c, #f0db4f);
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/*regist muehehheh*/
+
+.Regist-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 60px; 
+}
+
+.Regist-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 90%;
+}
+
+.Regist-title {
+  font-size: 24px;
+  color: #f0db4f;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Regist-form {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #f0db4f;
+  font-weight: bold;
+  gap: 15px; 
+}
+
+.Regist-form label {
+  font-size: 14px;
+  color: #f0db4f;
+}
+
+.Regist-form input {
+  padding: 10px;
+  font-size: 14px;
+  border: 0.2rem solid white;
+  border-radius: 4px;
+  outline: none;
+}
+
+.Regist-form input:focus {
+  border-color: #f0db4f;
+  border-width: 0.2rem;
+}
+
+.Regist-button {
   background: linear-gradient(to right, #f7de6c, #f0db4f);
   color: #ffffff;
   border: none;

@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./config/Firebase";
 import Mock from "./Mock";
+import Reg from "./Reg";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -13,6 +14,7 @@ root.render(
     <Router>
       <Routes>
         <Route path="/" element={<Mock />} />
+        <Route path="/Reg" element={<Reg />} />
         <Route path="/App" element={<App />} />
       </Routes>
     </Router>
