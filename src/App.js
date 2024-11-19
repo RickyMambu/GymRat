@@ -7,7 +7,8 @@ import Exercise from "./components/Exercise";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Mock from "./Mock";
 const App = () => {
   return (
     <div className="full">
@@ -18,8 +19,6 @@ const App = () => {
       <About />
       <Contact />
       <Footer />
-
-      <section></section>
     </div>
   );
 };

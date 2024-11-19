@@ -7,13 +7,12 @@ import { initializeApp } from "firebase/app";
 const firebaseConfig = {
   apiKey: "AIzaSyBdaK2J5HzSdzzBlnLU-uuNRwPadYfWE3I",
   authDomain: "gymrat-29262.firebaseapp.com",
+  databaseURL: "https://gymrat-29262-default-rtdb.firebaseio.com",
   projectId: "gymrat-29262",
   storageBucket: "gymrat-29262.firebasestorage.app",
   messagingSenderId: "213477217192",
-  appId: "1:213477217192:web:36478fad498a62c565439d"
+  appId: "1:213477217192:web:36478fad498a62c565439d",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-export default app;

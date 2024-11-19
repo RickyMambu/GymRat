@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getDatabase, ref, onValue } from "firebase/database";
 
+
 function Contact() {
   const [Contact, setContact] = useState({});
 
@@ -21,6 +22,7 @@ function Contact() {
           <h1>
             {Contact.con1} <span>{Contact.con2}</span>
           </h1>
+
         </div>
         <div className="contact-boxes">
           <div className="contact-box">

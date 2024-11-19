@@ -1,10 +1,6 @@
 import React from "react";
-import {
-  FaAppleAlt,
-  FaDumbbell,
-  FaChartLine,
-  FaInfoCircle,
-} from "react-icons/fa";
+import { Link } from "react-scroll";
+import { FaAppleAlt, FaDumbbell, FaInfoCircle, FaPhone } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -12,24 +8,24 @@ const Navbar = () => {
       <h1 className="navbar-logo">GymRat</h1>
       <ul className="navbar-links">
         <li>
-          <a href="/diet">
+          <Link to="Diet" smooth={true} duration={500}>
             <FaAppleAlt className="icon" /> Diet
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#exercise">
+          <Link to="Exercise" smooth={true} duration={500}>
             <FaDumbbell className="icon" /> Exercise
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#progress">
-            <FaChartLine className="icon" /> Progress
-          </a>
+          <Link to="About" smooth={true} duration={500}>
+            <FaInfoCircle className="icon" /> About
+          </Link>
         </li>
         <li>
-          <a href="#information">
-            <FaInfoCircle className="icon" /> Information
-          </a>
+          <Link to="Contact" smooth={true} duration={500}>
+            <FaPhone className="icon" /> Contact
+          </Link>
         </li>
       </ul>
     </nav>
