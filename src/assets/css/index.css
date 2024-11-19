@@ -447,25 +447,33 @@ body {
 
 /* About Us Section */
 .about {
-  width: 100%;
-  height: auto;
-  margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
 }
 
 .about .about_main {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 50px;
 }
 
 .about .about_main .about_text h1 span {
   color: #f0db4f;
+  align-items: center;
   margin-right: 15px;
+  justify-content: center;
 }
 
 .about .about_main .about_text h1 {
   font-size: 55px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Slider Section */
@@ -536,11 +544,13 @@ body {
 
 /*Team*/
 .team {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  margin-top: 60px;
-  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .team h1 {
@@ -555,6 +565,7 @@ body {
   color: #f0db4f;
   margin-left: 15px;
   font-family: mv boli;
+
 }
 
 .team h1 span::after {
@@ -565,29 +576,34 @@ body {
   display: block;
   position: relative;
   bottom: 15px;
+
 }
 
 .team .team_box {
-  width: 55%;
+  width: 100%; /* Pastikan box menggunakan lebar penuh */
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  flex-wrap: wrap; /* Tambahkan wrapping untuk responsivitas */
   top: 16%;
+  gap: 20px; /* Tambahkan jarak antar profile */
 }
 
 .team .team_box .profile {
-  width: 380px;
-  height: 320px;
+  width: 300px; /* Sesuaikan ukuran gambar */
+  height: 300px;
   border-radius: 50%;
   margin: 0 15px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   position: relative;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   transition: 0.4s;
+  z-index: 1; /* Pastikan gambar ada di atas */
 }
 
 .team .team_box .profile:hover {
@@ -598,7 +614,7 @@ body {
 .team .team_box .profile img {
   width: 250px;
   height: 250px;
-  object-fit: cover;
+  object-fit: cover; /* Pastikan gambar menyesuaikan proporsinya */
   object-position: center;
   border-radius: 50%;
   cursor: pointer;
@@ -617,23 +633,68 @@ body {
   text-align: center;
   top: 25%;
   transition: 0.4s;
+  display: flex;
 }
 
 .team .team_box .profile:hover .info {
   top: 65%;
+  opacity: 1; /* Makes text visible when hovering */
+  z-index: 3; /* Ensures text appears on top if needed */
+  top: 65%; /* Adjust position */
+  transition: opacity 0.4s, top 0.4s; /* Smooth transition */
 }
 
 .team .team_box .profile .info .name {
   color: #f0db4f;
   margin-bottom: 15px;
-  font-size: 22px;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+/* Media Queries untuk Responsivitas */
+@media (max-width: 768px) {
+  .team .team_box {
+    flex-direction: column; /* Tata letak berubah menjadi vertikal */
+  }
+
+  .team .team_box .profile {
+    width: 250px;
+    height: 250px;
+  }
+
+  .team .team_box .profile img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team .team_box .profile {
+    width: 200px;
+    height: 200px;
+  }
+
+  .team .team_box .profile img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .team h1 {
+    font-size: 35px; /* Kurangi ukuran font untuk layar kecil */
+  }
+}
+
 
 /* Contact Section */
 .contact {
-  margin-top: 1400px;
-  padding: 80px 0;
-  color: #ffffff;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
 
 .contact .sec-top h1 {
