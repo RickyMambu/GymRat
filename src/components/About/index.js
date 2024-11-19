@@ -55,7 +55,7 @@ const Slider = () => {
 
   return (
 
-    <div className="container">
+    <div id= "About" className="container">
       <section id="experience">
         <div className="about">
           <div className="about_main">
@@ -66,6 +66,7 @@ const Slider = () => {
               </h1>
             </div>
           </div>
+        </div>
 
 
       <div className="slider-wrapper">
@@ -104,11 +105,7 @@ const Slider = () => {
         )}
       </div>
 
-      <div className="slider-nav">
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-      </div>
+      
 
       <div className="team">
         <h1>
@@ -128,7 +125,7 @@ const Slider = () => {
               onLoad={handleImagesLoad}
             />
             <div className="info">
-              <h2 className="name">Revando Aruperes</h2>
+              <h2 className="name">Revando <br/>Aruperes</h2>
             </div>
           </div>
           <div className="profile">
@@ -144,7 +141,7 @@ const Slider = () => {
               onLoad={handleImagesLoad}
             />
             <div className="info">
-              <h2 className="name">Ricky Mambu</h2>
+              <h2 className="name">Ricky <br/> Mambu</h2>
             </div>
           </div>
           <div className="profile">
@@ -160,7 +157,7 @@ const Slider = () => {
               onLoad={handleImagesLoad}
             />
             <div className="info">
-              <h2 className="name">Jeremy Purukan</h2>
+              <h2 className="name">Jeremy <br/>Purukan</h2>
             </div>
           </div>
           <div className="profile">
@@ -176,7 +173,7 @@ const Slider = () => {
               onLoad={handleImagesLoad}
             />
             <div className="info">
-              <h2 className="name">Emily Pangemanan</h2>
+              <h2 className="name">Emily <br/>Pangemanan</h2>
             </div>
           </div>
           <div className="profile">
@@ -192,13 +189,14 @@ const Slider = () => {
               onLoad={handleImagesLoad}
             />
             <div className="info">
-              <h2 className="name">Noselycha Soriton</h2>
+              <h2 className="name">Noselycha <br/>Soriton</h2>
 
             </div>
           </div>
         </div>
       </div>
-    </section>
+      </section>
+    </div>
 
   );
 };

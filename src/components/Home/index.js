@@ -8,7 +8,7 @@ import GymPhoto2 from "../../assets/img/people-doing-indoor-cycling.jpg";
 import GymPhoto3 from "../../assets/img/close-up-kettlebells-workout-gym.jpg";
 
 const Home = () => {
-  const [Dhome, setHome] = useState({});
+  const [Home, setHome] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const [timeoutReached, setTimeoutReached] = useState(false);
@@ -51,8 +51,8 @@ const Home = () => {
       <section className="home-section" id="Home">
         <div className="home-content">
 
-          <h1 className="home-title">{Dhome.Title}</h1>
-          <p className="home-paragraph">{Dhome.Sub}</p>
+          <h1 className="home-title">{Home.title}</h1>
+          <p className="home-paragraph">{Home.subtitle}</p>
 
           <div className="image-container">
             <img
