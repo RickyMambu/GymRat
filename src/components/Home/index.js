@@ -56,19 +56,19 @@ const Home = () => {
 
           <div className="image-container">
             <img
-              src={GymPhoto2}
+              src={`data:image/jpg;base64, ${Home.image1}`}
               alt="gym"
               className="gym-image side-image"
               onLoad={handleImagesLoad}
             />
             <img
-              src={GymPhoto}
+              src={`data:image/jpg;base64, ${Home.image2}`}
               alt="gym"
               className="gym-image center-image"
               onLoad={handleImagesLoad}
             />
             <img
-              src={GymPhoto3}
+              src={`data:image/jpg;base64, ${Home.image3}`}
               alt="gym"
               className="gym-image side-image"
               onLoad={handleImagesLoad}
