@@ -32,7 +32,6 @@ const Slider = () => {
   return (
     <div className="container">
       <section id="experience">
-        {/* About Us */}
         <div className="about">
           <div className="about_main">
             <div className="about_text">
@@ -45,7 +44,6 @@ const Slider = () => {
         </div>
       </section>
 
-      {/* Slider Section */}
       <div className="slider-wrapper">
         <div ref={sliderRef} className="slider">
           <div className="slide">
@@ -69,7 +67,6 @@ const Slider = () => {
         </div>
       </div>
 
-      {/* Team Section */}
       <div className="team">
         <h1>
           Our<span> Team</span>
