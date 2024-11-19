@@ -61,6 +61,7 @@ const Slider = () => {
             <div className="slide-text">{About.text3}</div>
           </div>
         </div>
+
         <div className="slider-nav">
           <a href="#"></a>
           <a href="#"></a>
