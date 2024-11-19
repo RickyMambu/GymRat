@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Register = () => {
   const navigate = useNavigate();
   const handleRegistClick = () => {
-    navigate("/Mock")
+    navigate("/")
   }
   return (
     <div className="Regist-wrapper">
