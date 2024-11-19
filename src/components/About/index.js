@@ -119,7 +119,7 @@ const Slider = () => {
               </div>
             )}
             <img
-              src="./images/ando.jpg"
+              src={`data:image/jpg;base64, ${About.ando}`}
               alt="ando-pic"
               className="about-pic"
               onLoad={handleImagesLoad}
@@ -135,7 +135,7 @@ const Slider = () => {
               </div>
             )}
             <img
-              src="./images/ricky.jpg"
+              src={`data:image/jpg;base64, ${About.ricky}`}
               alt="ricky-pic"
               className="about-pic"
               onLoad={handleImagesLoad}
@@ -151,7 +151,7 @@ const Slider = () => {
               </div>
             )}
             <img
-              src="./images/jeremy.png"
+              src={`data:image/jpg;base64, ${About.jeremy}`}
               alt="jeremy-pic"
               className="about-pic"
               onLoad={handleImagesLoad}
@@ -167,7 +167,7 @@ const Slider = () => {
               </div>
             )}
             <img
-              src="./images/mili.jpg"
+              src={`data:image/jpg;base64, ${About.mili}`}
               alt="emily-pic"
               className="about-pic"
               onLoad={handleImagesLoad}
@@ -183,7 +183,7 @@ const Slider = () => {
               </div>
             )}
             <img
-              src="./images/lika.jpg"
+              src={`data:image/jpg;base64, ${About.lika}`}
               alt="lika-pic"
               className="about-pic"
               onLoad={handleImagesLoad}
