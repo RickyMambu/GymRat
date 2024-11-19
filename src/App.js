@@ -7,23 +7,17 @@ import Exercise from "./components/Exercise";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Mock from "./Mock";
 const App = () => {
   return (
     <div className="full">
-      <Router>
-        <Routes>
-          <Route path="/src/components/Home" element={<Mock />}>
-            <Navbar />
-            <Home />
-            <Diet />
-            <Exercise />
-            <About />
-            <Contact />
-          </Route>
-        </Routes>
-      </Router>
+      <Navbar />
+      <Home />
+      <Diet />
+      <Exercise />
+      <About />
+      <Contact />
+      <Footer />
     </div>
   );
 };
