@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaFish,
   FaAppleAlt,
@@ -12,59 +11,71 @@ import {
   FaBacon,
   FaBlender,
 } from "react-icons/fa";
+import React, { useEffect, useState } from "react";
+import { getDatabase, ref, onValue } from "firebase/database";
 
 const Diet = () => {
+  const [Diet, setDiet] = useState({});
+
+  useEffect(() => {
+    const db = getDatabase();
+    const DietRef = ref(db, "Diet");
+    onValue(DietRef, (snapshot) => {
+      const data = snapshot.val();
+      setDiet(data);
+    });
+  }, []);
   return (
     <section className="diet-section" id="Diet">
-      <h2 className="diet-heading">WHY CHOOSE OUR DIET PLAN</h2>
+      <h2 className="diet-heading">{Diet.title}</h2>
       <div className="diet-features">
         <div className="diet-feature">
           <FaAppleAlt className="diet-icon" />
-          <h3>Balanced Nutrition</h3>
-          <p>Provides a balanced mix of essential nutrients.</p>
+          <h3>{Diet.subtit1}</h3>
+          <p>{Diet.text1}</p>
         </div>
         <div className="diet-feature">
           <FaLeaf className="diet-icon" />
-          <h3>Natural Ingredients</h3>
-          <p>Uses fresh, organic, and natural ingredients.</p>
+          <h3>{Diet.subtit2}</h3>
+          <p>{Diet.text2}</p>
         </div>
         <div className="diet-feature">
           <FaBacon className="diet-icon" />
-          <h3>Heart Health</h3>
-          <p>Designed to support cardiovascular health.</p>
+          <h3>{Diet.subtit3}</h3>
+          <p>{Diet.text3}</p>
         </div>
         <div className="diet-feature">
           <FaBlender className="diet-icon" />
-          <h3>Personalized Plans</h3>
-          <p>Customized plans to fit your lifestyle and goals.</p>
+          <h3>{Diet.subtit4}</h3>
+          <p>{Diet.text4}</p>
         </div>
       </div>
 
-      <h2 className="diet-heading">Nutritional Food Categories</h2>
+      <h2 className="diet-heading">{Diet.title2}</h2>
       <div className="food-categories">
         <a
           href="https://www.alodokter.com/ini-makanan-sumber-protein-hewani-yang-harus-anda-ketahui"
           className="food-category"
         >
           <FaFish className="food-icon" />
-          <h3>Animal Protein</h3>
-          <p>Protein from animal sources like fish, meat, and eggs.</p>
+          <h3>{Diet.subtit5}</h3>
+          <p>{Diet.text5}</p>
           <div className="food-list">
             <div className="food-item show">
               <FaFish className="food-icon" />
-              <p>Fish</p>
+              <p>{Diet.aprotein1}</p>
             </div>
             <div className="food-item show">
               <FaDrumstickBite className="food-icon" />
-              <p>Chicken</p>
+              <p>{Diet.aprotein2}</p>
             </div>
             <div className="food-item show">
               <FaEgg className="food-icon" />
-              <p>Eggs</p>
+              <p>{Diet.aprotein3}</p>
             </div>
             <div className="food-item show">
               <FaCheese className="food-icon" />
-              <p>Cheese</p>
+              <p>{Diet.aprotein4}</p>
             </div>
           </div>
         </a>
@@ -74,24 +85,24 @@ const Diet = () => {
           className="food-category"
         >
           <FaSeedling className="food-icon" />
-          <h3>Plant Protein</h3>
-          <p>Protein from plant sources like legumes and seeds.</p>
+          <h3>{Diet.subtit6}</h3>
+          <p>{Diet.text6}</p>
           <div className="food-list">
             <div className="food-item show">
               <FaLeaf className="food-icon" />
-              <p>Spinach</p>
+              <p>{Diet.pprotein1}</p>
             </div>
             <div className="food-item show">
               <FaCarrot className="food-icon" />
-              <p>Carrots</p>
+              <p>{Diet.pprotein2}</p>
             </div>
             <div className="food-item show">
               <FaSeedling className="food-icon" />
-              <p>Tofu</p>
+              <p>{Diet.pprotein3}</p>
             </div>
             <div className="food-item show">
               <FaLemon className="food-icon" />
-              <p>Lentils</p>
+              <p>{Diet.pprotein4}</p>
             </div>
           </div>
         </a>
@@ -101,20 +112,20 @@ const Diet = () => {
           className="food-category"
         >
           <FaCheese className="food-icon" />
-          <h3>Vitamins & Minerals</h3>
-          <p>Essential vitamins and minerals for a healthy body.</p>
+          <h3>{Diet.subtit7}</h3>
+          <p>{Diet.text7}</p>
           <div className="food-list">
             <div className="food-item show">
               <FaAppleAlt className="food-icon" />
-              <p>Apple</p>
+              <p>{Diet.vitmin1}</p>
             </div>
             <div className="food-item show">
               <FaEgg className="food-icon" />
-              <p>Sweet Potatoes</p>
+              <p>{Diet.vitmin2}</p>
             </div>
             <div className="food-item show">
               <FaCarrot className="food-icon" />
-              <p>Spinach</p>
+              <p>{Diet.vitmin3}</p>
             </div>
           </div>
         </a>
