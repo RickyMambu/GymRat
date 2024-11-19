@@ -68,11 +68,12 @@ body {
 
 .signup-container {
   flex: 1;
-  max-width: 40%;
+  max-width: 50%;
   background: rgba(255, 255, 255, 0.1);
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
 }
 
 .signup-title {
@@ -89,7 +90,7 @@ body {
 
 .signup-form label {
   font-size: 0.9rem;
-  margin-left: -112px;
+  margin-left: -180px;
 }
 
 .signup-form input {

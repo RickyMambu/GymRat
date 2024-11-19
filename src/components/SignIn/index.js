@@ -1,7 +1,12 @@
 import React from "react";
 import "../../App.css";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
+  const navigate = useNavigate();
+  const handleSignUpClick = () => {
+    navigate("/App");
+  };
   return (
     <div className="signup-wrapper">
       <div className="welcome-section">
@@ -33,7 +38,11 @@ const SignIn = () => {
             required
           />
 
-          <button type="submit" className="signup-button">
+          <button
+            type="submit"
+            className="signup-button"
+            onClick={handleSignUpClick}
+          >
             Login
           </button>
         </form>
