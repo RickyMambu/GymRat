@@ -7,6 +7,9 @@ const SignIn = () => {
   const handleSignUpClick = () => {
     navigate("/App")
   }
+  const handleRegistClick = () => {
+    navigate("/Reg")
+  }
   return (
     <div className="signup-wrapper">
       <div className="welcome-section">
@@ -15,7 +18,7 @@ const SignIn = () => {
           No matter what your fitness goal may be, you'll find everything you
           need at GymRat.
         </p>
-        <button className="reg-btn">Register</button>
+        <button type="submit" className="reg-btn" onClick={handleRegistClick}>Register</button>
       </div>
       <div className="signup-container">
         <h2 className="signup-title">Sign In</h2>
