@@ -904,3 +904,16 @@ body {
 .footer-links a:hover {
   color: #ff4b5c;
 }
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.245);
+  z-index: 10;
+}
