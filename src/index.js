@@ -14,7 +14,7 @@ root.render(
     <Router>
       <Routes>
         <Route path="/" element={<Mock />} />
-        <Route path="/Reg" element={<Reg/>} />
+        <Route path="/Reg" element={<Reg />} />
         <Route path="/App" element={<App />} />
       </Routes>
     </Router>
