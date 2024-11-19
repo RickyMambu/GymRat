@@ -1,50 +1,65 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getDatabase, ref, onValue } from "firebase/database";
 
-const Contact = () => (
-  <section id="contact" className="contact full">
-    <div className="container">
-      <div className="sec-top">
-        <h1>
-          Contact <span>Us</span>
-        </h1>
+function Contact() {
+  const [Contact, setContact] = useState({});
+
+  useEffect(() => {
+    const db = getDatabase();
+    const ContactRef = ref(db, "Contact");
+
+    onValue(ContactRef, (snapshot) => {
+      const data = snapshot.val();
+      setContact(data);
+    });
+  }, []);
+
+  return (
+    <section id="contact" className="contact full">
+      <div className="container">
+        <div className="sec-top">
+          <h1>
+            Contact <span>Us</span>
+          </h1>
+        </div>
+        <div className="contact-boxes">
+          <div className="contact-box">
+            <i className="fa-solid fa-phone" />
+            <h3>{Contact.phoneM}</h3>
+            <p className="phone">{Contact.phone1}</p>
+            <p className="phone">{Contact.phone2}</p>
+            <p className="phone">{Contact.phone3}</p>
+            <p className="phone">{Contact.phone4}</p>
+            <p className="phone">{Contact.phone5}</p>
+          </div>
+          <div className="contact-box">
+            <i className="fa-solid fa-envelope" />
+            <h3>{Contact.emailM}</h3>
+            <p>{Contact.email1}</p>
+            <p>{Contact.email2}</p>
+            <p>{Contact.email3}</p>
+            <p>{Contact.email4}</p>
+            <p>{Contact.email5}</p>
+          </div>
+          <div className="contact-box">
+            <i className="fa-solid fa-map-marker-alt" />
+            <h3>{Contact.addresM}</h3>
+            <p>{Contact.address1}</p>
+          </div>
+        </div>
+        {/* OR Section */}
+        <div className="or-text">OR</div>
+        <form className="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" className="btn">
+            Send Message
+          </button>
+        </form>
       </div>
-      <div className="contact-boxes">
-        <div className="contact-box">
-          <i className="fa-solid fa-phone" />
-          <h3>Phone</h3>
-          <p className="phone">0813-4105-0067 Ricky</p>
-          <p className="phone">0896-9803-5966 Revando</p>
-          <p className="phone">0859-3184-4355 Jeremy</p>
-          <p className="phone">0852-1638-6828 Noselycha</p>
-          <p className="phone">0821-9349-2409 Emily</p>
-        </div>
-        <div className="contact-box">
-          <i className="fa-solid fa-envelope" />
-          <h3>Email</h3>
-          <p>s22210153@student.unklab.ac.id</p>
-          <p>s22210120@student.unklab.ac.id</p>
-          <p>s22210214@student.unklab.ac.id</p>
-          <p>s22210290@student.unklab.ac.id</p>
-          <p>s22210189@student.unklab.ac.id</p>
-        </div>
-        <div className="contact-box">
-          <i className="fa-solid fa-map-marker-alt" />
-          <h3>Address</h3>
-          <p>Klabat University</p>
-        </div>
-      </div>
-      {/* OR Section */}
-      <div className="or-text">OR</div>
-      <form className="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" className="btn">
-          Send Message
-        </button>
-      </form>
-    </div>
-  </section>
-);
+    </section>
+  );
+}
 
 export default Contact;
