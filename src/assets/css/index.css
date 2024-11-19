@@ -726,9 +726,9 @@ body {
 }
 /* Footer Styling */
 .footer {
-  background: #121212; /* Warna gelap */
+  background: #121212;
   padding: 20px 0;
-  color: #ffffff; /* Teks warna putih */
+  color: #ffffff;
   text-align: center;
 }
 
@@ -741,12 +741,12 @@ body {
 .footer p {
   margin: 10px 0;
   font-size: 1rem;
-  color: #b0b0b0; /* Warna abu-abu untuk teks default */
+  color: #b0b0b0;
 }
 
 .footer p span.gymrat {
-  color: #f0db4f; /* Warna kuning hanya untuk GymRat */
-  font-weight: bold; /* Opsional, membuat teks lebih tebal */
+  color: #f0db4f;
+  font-weight: bold;
 }
 
 .footer-links {
@@ -754,8 +754,8 @@ body {
   padding: 0;
   margin: 10px 0;
   display: flex;
-  justify-content: center; /* Pusatkan tautan */
-  gap: 20px; /* Jarak antar tautan */
+  justify-content: center;
+  gap: 20px;
 }
 
 .footer-links li {
@@ -764,11 +764,11 @@ body {
 
 .footer-links a {
   text-decoration: none;
-  color: #f0db4f; /* Warna kuning untuk tautan */
+  color: #f0db4f;
   font-size: 1rem;
-  transition: color 0.3s ease; /* Transisi saat hover */
+  transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: #ff4b5c; /* Warna merah muda saat hover */
+  color: #ff4b5c;
 }
