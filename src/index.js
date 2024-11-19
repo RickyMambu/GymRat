@@ -13,8 +13,8 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/Mock" element={<Mock />} />
-        <Route path="/Reg" element={<Reg/>} />
+        <Route path="/" element={<Mock />} />
+        <Route path="/Reg" element={<Reg />} />
         <Route path="/App" element={<App />} />
       </Routes>
     </Router>
