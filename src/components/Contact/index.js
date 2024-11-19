@@ -19,7 +19,7 @@ function Contact() {
       <div className="container">
         <div className="sec-top">
           <h1>
-            Contact <span>Us</span>
+            {Contact.con1} <span>{Contact.con2}</span>
           </h1>
         </div>
         <div className="contact-boxes">
@@ -48,7 +48,7 @@ function Contact() {
           </div>
         </div>
         {/* OR Section */}
-        <div className="or-text">OR</div>
+        <div className="or-text">{Contact.or}</div>
         <form className="contact-form">
           <input type="text" placeholder="Your Name" required />
           <input type="email" placeholder="Your Email" required />
