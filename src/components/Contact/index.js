@@ -45,7 +45,7 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="contact full">
+    <section id="Contact" className="contact full">
       <div className="container">
         <div className="sec-top">
           <h1>

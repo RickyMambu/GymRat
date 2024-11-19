@@ -40,7 +40,7 @@ const Exercise = () => {
   };
 
   return (
-    <div className="exercise-section">
+    <div id="Excercise" className="exercise-section">
       <h2 className="section-heading">{exercises.title}</h2>
       <p className="section-subtext">{exercises.subtitle}</p>
       <button className="schedule-button">{exercises.view}</button>
@@ -52,6 +52,7 @@ const Exercise = () => {
           className="main-exercise-image"
         />
         <div className="exercise-description">
+          
           <h3>{selectedExercise.name}</h3>
           <p>{selectedExercise.desc}</p>
           <a href="#" className="view-schedule-link">
