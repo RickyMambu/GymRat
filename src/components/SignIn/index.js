@@ -20,7 +20,7 @@ const SignIn = () => {
       console.error(err);
     }
   };
-
+  
   return (
     <div className="signup-wrapper">
       <div className="welcome-section">
@@ -59,7 +59,6 @@ const SignIn = () => {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-
           <button type="submit" className="signup-button">
             Login
           </button>
