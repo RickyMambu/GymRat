@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../App.css";
 import { useNavigate } from "react-router-dom";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../config/Firebase/index";
 
 const SignIn = () => {
   const navigate = useNavigate();
-  const handleSignUpClick = () => {
-    navigate("/App")
-  }
+  
   const handleRegistClick = () => {
     navigate("/Reg")
   }
+  
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSignIn = async (e) => {
+    e.preventDefault();
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      navigate("/App");
+    } catch (err) {
+      setError("Invalid email or password.");
+      console.error(err);
+    }
+  };
+  
   return (
     <div className="signup-wrapper">
       <div className="welcome-section">
@@ -19,16 +35,24 @@ const SignIn = () => {
           need at GymRat.
         </p>
         <button type="submit" className="reg-btn" onClick={handleRegistClick}>Register</button>
+        <button className="reg-btn" onClick={() => navigate("/register")}>
+          Register
+        </button>
+
       </div>
       <div className="signup-container">
         <h2 className="signup-title">Sign In</h2>
-        <form className="signup-form">
-          <label htmlFor="username">Username</label>
+        <form className="signup-form" onSubmit={handleSignIn}>
+          {error && <p className="error-message">{error}</p>}
+
+          <label htmlFor="email">Email</label>
           <input
-            type="text"
-            id="username"
-            name="username"
-            placeholder="Enter  your username"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             required
           />
 
@@ -38,10 +62,11 @@ const SignIn = () => {
             id="password"
             name="password"
             placeholder="Enter your password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             required
           />
-
-          <button type="submit" className="signup-button" onClick={handleSignUpClick}>
+          <button type="submit" className="signup-button">
             Login
           </button>
         </form>
