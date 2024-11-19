@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "../../App.css";
 import { useNavigate } from "react-router-dom";
-import { auth } from "../../config/Firebase/index";
+import { auth } from "../../config/Firebase";
+import { database } from "../../config/Firebase"; // Import database
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import { ref, set } from "firebase/database"; // Import functions for Realtime Database
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -14,7 +16,17 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await createUserWithEmailAndPassword(auth, email, password);
+      // Register user with Firebase Authentication
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+
+      // Add user data to Realtime Database
+      await set(ref(database, `users/${user.uid}`), {
+        email: email,
+        username: username,
+        createdAt: new Date().toISOString(), // Optional: Add a timestamp
+      });
+
       alert("Account created successfully!");
       navigate("/");
     } catch (err) {
