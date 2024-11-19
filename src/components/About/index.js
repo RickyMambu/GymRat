@@ -54,6 +54,7 @@ const Slider = () => {
   }, [imagesLoaded, isLoading]);
 
   return (
+
     <div className="container">
       <section id="experience">
         <div className="about">
@@ -65,8 +66,7 @@ const Slider = () => {
               </h1>
             </div>
           </div>
-        </div>
-      </section>
+
 
       <div className="slider-wrapper">
         {isLoading ? (
@@ -100,6 +100,7 @@ const Slider = () => {
               <div className="slide-text">{About.text3}</div>
             </div>
           </div>
+
         )}
       </div>
 
@@ -192,11 +193,13 @@ const Slider = () => {
             />
             <div className="info">
               <h2 className="name">Noselycha Soriton</h2>
+
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
   );
 };
 

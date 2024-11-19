@@ -50,8 +50,10 @@ const Home = () => {
       <MouseTrail strokeColor="rgb(240, 219, 79)" lineWidthStart={10} />
       <section className="home-section" id="Home">
         <div className="home-content">
+
           <h1 className="home-title">{Dhome.Title}</h1>
           <p className="home-paragraph">{Dhome.Sub}</p>
+
           <div className="image-container">
             <img
               src={GymPhoto2}
