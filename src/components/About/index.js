@@ -30,6 +30,7 @@ const Slider = () => {
   }, []);
 
   return (
+
     <div className="container">
       <section id="experience">
         {/* About Us */}
@@ -42,8 +43,7 @@ const Slider = () => {
               </h1>
             </div>
           </div>
-        </div>
-      </section>
+
 
       {/* Slider Section */}
       <div className="slider-wrapper">
@@ -60,66 +60,69 @@ const Slider = () => {
             <img src="./images/about3.jpg" alt="Image 3" />
             <div className="slide-text">{About.text3}</div>
           </div>
+
+          <div className="slider-nav">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+          </div>
         </div>
 
-        <div className="slider-nav">
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-        </div>
-      </div>
 
-      {/* Team Section */}
-      <div className="team">
-        <h1>
-          Our<span> Team</span>
-        </h1>
-        <div className="team_box">
-          <div className="profile">
-            <img src="./images/ando.jpg" alt="ando-pic" className="about-pic" />
-            <div className="info">
-              <h2 className="name">Revando Aruperes</h2>
+        {/* Team Section */}
+        <div className="team">
+          <h1>
+            Our<span> Team</span>
+          </h1>
+          <div className="team_box">
+            <div className="profile">
+              <img src="./images/ando.jpg" alt="ando-pic" className="about-pic" />
+              <div className="info">
+                <h2 className="name">Revando <br/>Aruperes</h2>
+              </div>
             </div>
-          </div>
-          <div className="profile">
-            <img
-              src="./images/ricky.jpg"
-              alt="ricky-pic"
-              className="about-pic"
-            />
-            <div className="info">
-              <h2 className="name">Ricky Mambu</h2>
+            <div className="profile">
+              <img
+                src="./images/ricky.jpg"
+                alt="ricky-pic"
+                className="about-pic"
+              />
+              <div className="info">
+                <h2 className="name">Ricky <br/>Mambu</h2>
+              </div>
+
             </div>
-          </div>
-          <div className="profile">
-            <img
-              src="./images/jeremy.png"
-              alt="jeremy-pic"
-              className="about-pic"
-            />
-            <div className="info">
-              <h2 className="name">Jeremy Purukan</h2>
+            <div className="profile">
+              <img
+                src="./images/jeremy.png"
+                alt="jeremy-pic"
+                className="about-pic"
+              />
+              <div className="info">
+                <h2 className="name">Jeremy <br/>Purukan</h2>
+
+              </div>
+            <div className="profile">
+              <img
+                src="./images/mili.jpg"
+                alt="emily-pic"
+                className="about-pic"
+              />
+              <div className="info">
+                <h2 className="name">Emily <br/>  Pangemanan</h2>
+              </div>
             </div>
-          </div>
-          <div className="profile">
-            <img
-              src="./images/mili.jpg"
-              alt="emily-pic"
-              className="about-pic"
-            />
-            <div className="info">
-              <h2 className="name">Emily Pangemanan</h2>
-            </div>
-          </div>
-          <div className="profile">
-            <img src="./images/lika.jpg" alt="lika-pic" className="about-pic" />
-            <div className="info">
-              <h2 className="name">Noselycha Soriton</h2>
+            <div className="profile">
+              <img src="./images/lika.jpg" alt="lika-pic" className="about-pic" />
+              <div className="info">
+                <h2 className="name">Noselycha <br/> Soriton</h2>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
   );
 };
 
