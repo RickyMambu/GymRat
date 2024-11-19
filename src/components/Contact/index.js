@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { getDatabase, ref, onValue } from "firebase/database";
-
+import { getDatabase, ref, onValue, push } from "firebase/database";
 
 function Contact() {
   const [Contact, setContact] = useState({});
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   useEffect(() => {
     const db = getDatabase();
@@ -15,6 +19,31 @@ function Contact() {
     });
   }, []);
 
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    const db = getDatabase();
+    const messagesRef = ref(db, "messages");
+
+    push(messagesRef, {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+      timestamp: new Date().toISOString(),
+    })
+      .then(() => {
+        alert("Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+      })
+      .catch((error) => {
+        alert("Failed to send message: " + error.message);
+      });
+  };
+
   return (
     <section id="contact" className="contact full">
       <div className="container">
@@ -22,7 +51,6 @@ function Contact() {
           <h1>
             {Contact.con1} <span>{Contact.con2}</span>
           </h1>
-
         </div>
         <div className="contact-boxes">
           <div className="contact-box">
@@ -49,12 +77,31 @@ function Contact() {
             <p>{Contact.address1}</p>
           </div>
         </div>
-        {/* OR Section */}
         <div className="or-text">{Contact.or}</div>
-        <form className="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" required></textarea>
+        <form className="contact-form" onSubmit={handleFormSubmit}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            value={formData.name}
+            onChange={handleInputChange}
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            value={formData.email}
+            onChange={handleInputChange}
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            value={formData.message}
+            onChange={handleInputChange}
+            required
+          ></textarea>
           <button type="submit" className="btn">
             Send Message
           </button>
